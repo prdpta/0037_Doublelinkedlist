@@ -235,3 +235,9 @@ bool search(int rollNo, Node** previous, Node** current)
                     break;
                 }
             }
+            catch (exception& e)
+            {
+                cout << "Check for the values enterted." << endl;
+            }
+        }
+    }
