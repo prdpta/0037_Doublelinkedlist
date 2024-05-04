@@ -108,3 +108,12 @@ bool search(int rollNo, Node** previous, Node** current)
             cout << "\033[31mThe record with roll number " << rollNo << " not found\033[0m" << endl;
             return;
         }
+
+        if (current == START)
+        {
+            START = START->next;
+            if (START != NULL)
+            {
+                START->prev = NULL;
+            }
+        }
