@@ -117,3 +117,7 @@ bool search(int rollNo, Node** previous, Node** current)
                 START->prev = NULL;
             }
         }
+
+        else
+        {
+            previous->next = current->next;
